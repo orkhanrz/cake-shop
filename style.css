@@ -183,7 +183,7 @@ h6 {
 }
 
 .main-text {
-	width: 60%;
+	width: min-content;
 	margin-left: auto;
 	padding: 64px 64px 0 0;
 	text-align: center;
@@ -227,6 +227,7 @@ h6 {
 .heaven-content {
 	background-image: url("./images/heaven.jpg");
 	background-position: top;
+	background-attachment: fixed;
 	padding: 192px 0;
 	text-align: center;
 }
@@ -387,15 +388,14 @@ h6 {
 }
 
 .price-items {
-	display: flex;
-	justify-content: center;
-	gap: 32px;
 	margin-top: 64px;
 }
 
 .price-item {
 	border: 1px solid lightgray;
 	text-align: center;
+	display: inline-block;
+	margin: 0 8px 32px 0;
 }
 
 .price-item.active {
@@ -471,6 +471,7 @@ h6 {
 
 #delight {
 	background-image: url("./images/delight.jpg");
+	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
 }
