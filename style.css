@@ -243,7 +243,7 @@ h6 {
 
 .truffle-items {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	column-gap: 96px;
 	width: 80%;
 	margin: 0 auto;
@@ -389,13 +389,15 @@ h6 {
 
 .price-items {
 	margin-top: 64px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 32px;
 }
 
 .price-item {
+	width: 100%;
 	border: 1px solid lightgray;
 	text-align: center;
-	display: inline-block;
-	margin: 0 8px 32px 0;
 }
 
 .price-item.active {
@@ -925,10 +927,6 @@ footer .row2 {
 		width: 100%;
 	}
 
-	.truffle-items {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
 	#home-grid {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -940,10 +938,6 @@ footer .row2 {
 	.home-grid-item-text {
 		padding: 32px;
 		outline-offset: -16px;
-	}
-
-	.price-items {
-		flex-wrap: wrap;
 	}
 
 	#team {
@@ -1004,10 +998,6 @@ footer .row2 {
 	.main-btns a {
 		display: block;
 		margin-bottom: 16px;
-	}
-
-	.truffle-items {
-		grid-template-columns: repeat(1, 1fr);
 	}
 
 	#home-grid {
